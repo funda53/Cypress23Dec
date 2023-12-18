@@ -17,6 +17,13 @@
   },
   "homepage": "https://github.com/funda53/Cypress23dec#readme",
   "dependencies": {
-    "cypress": "^13.6.1"
+    "cypress": "^13.6.1",
+    "cypress-qase-reporter": "^1.4.3",
+    "dotenv": "^16.3.1",
+    "prompt": "^1.3.0"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress-file-upload": "^5.0.8"
   }
 }
