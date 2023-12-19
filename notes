@@ -1,0 +1,18 @@
+RUN OPT
+-1-
+npx cypress open
+-2-
+package.json file includes run command, 
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bla-test": "cypress open"
+     or 
+     "cy:cli": "cypress open"
+    you can define any name to run thr command
+    npm run bla-test
+    npm run  cy:cli
+-3-
+package.json hover on scrits then two options run/debug run
+
+-- Failed tc attemtpted
+ package.json file ->  retries : 2,
