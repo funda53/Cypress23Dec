@@ -37,4 +37,8 @@ describe('Context: My First Test Group', () => {
   it.skip('Test 6', () => {
     expect(true).to.equal('5' === 5);
   });
+
+  it('Test 7', () => {
+    expect(true).equal(false);
+  });
 });
