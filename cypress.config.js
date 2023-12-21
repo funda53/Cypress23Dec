@@ -15,9 +15,10 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     retries : 2,
+    // waiting time before reattemt to run tc
     defaultCommandTimeout: 5000,
-    viewportHeight: 800,
-    viewportWidth: 1200,
+    viewportHeight: 660,
+    viewportWidth: 1000,
     video: false
   },
 });
