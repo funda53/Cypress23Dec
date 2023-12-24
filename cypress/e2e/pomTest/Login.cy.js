@@ -1,6 +1,8 @@
+// first way import
 import { navigateTo } from '../../support/pages/Navigation';
 import { auth } from '../../support/pages/Auth';
 
+// second way create obj 
 const LoginLocators = require('../../support/pages/Auth');
 
 describe('Auth: Login user with different ways', () => {
@@ -9,7 +11,7 @@ describe('Auth: Login user with different ways', () => {
     navigateTo.loginPage(); // called it from page object model
   });
 
-  it('Happy path Login scenario', () => {
+  it('Happy path Login scenario - first way call class elements by import', () => {
     cy.fixture('user').then((user) => {
       auth.login(user.user2.username, user.user2.password);
     });
@@ -17,11 +19,13 @@ describe('Auth: Login user with different ways', () => {
     cy.textExists('You logged into a secure area!');
   });
 
-  it('Happy path Login scenario with page locators', () => {
+
+  it('Happy path Login scenario with page locators - second way: crete object', () => {
     cy.fixture('user').then((user) => {
       LoginLocators.locators.userName.type(user.user2.username);
       LoginLocators.locators.password.type(user.user2.password);
       LoginLocators.locators.submit.click();
+      
 
       cy.textExists('You logged into a secure area!');
     });

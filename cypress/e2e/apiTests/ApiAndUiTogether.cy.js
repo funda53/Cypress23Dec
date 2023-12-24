@@ -43,7 +43,7 @@ describe('E2E - Test API integrated UI Test', () => {
       cy.request({
         method: 'DELETE',
         headers: {
-          authorization: `Bearer ${response.body.token}`,
+          authorization: `Bearer ${response.body.token}`, // this is for authorite the delete function
         },
         url: `${Cypress.env('apiUrl')}${Cypress.env('generateUser')}/${response.body.userId}`,
       });
