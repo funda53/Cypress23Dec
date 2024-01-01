@@ -4,9 +4,12 @@ let str3 = "awesome";
 
 let result;
 
-result = "The result varible is: "+ str1 + str2 + ' ' + str3 ; // Like Java
+// use with quatation 
+result = "The result variable is: "+ str1 + str2 + ' ' + str3 ; // Like Java
 
 console.log(result);
 
-result = `the result variable is : ${str1}${str2} ${str3}`;
+
+// use with backticks `
+result = `The result variable is: ${str1}${str2} ${str3}`;
 console.log(result);

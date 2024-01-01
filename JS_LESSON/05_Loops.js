@@ -1,9 +1,11 @@
 // for loop, while loop and do while loop
-for (let index = 0; index <= 5; index++) { // let creates a local scope variable
+for (let index = 0; index < 5; index++) { // let creates a local scope variable
     console.log(index);
 }
 // console.log(index);
 
+
+console.log("old type of variable declaritopn-var");
 // old type of declaring variables in JS: before ES6
 for(var j = 0 ; j < 5 ; j++ ){
     console.log(j);

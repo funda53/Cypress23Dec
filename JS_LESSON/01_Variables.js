@@ -10,6 +10,9 @@ message = 'Hello Cydeo Students';
 
 console.log(message);
 
+// sortcut write just log then enter
+console.log();
+
 // re-assign a new value
 message = 'My first JS Code';
 
