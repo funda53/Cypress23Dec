@@ -15,12 +15,15 @@ function multiply(a,b) {
 
 console.log('The result of multiplication : '+ multiply(10,20));
 
+
+//function is a data type, you can store a function into a variable
 let divide = function (a,b) {
     return a/b;
 }
 
 console.log(divide(20,10));
 
+// change function name, reassign
 let anyName = divide;
 
 console.log(anyName(20,10));

@@ -6,13 +6,16 @@ let person = {
 console.log(person);
 console.log(person.firstName);
 
-person.age = 25; // add a new property with dot notation
+// add a new property with dot notation
+person.age = 25; 
 
 console.log(person);
 
+// delete 
 delete person.lastName;
 console.log(person);
 
+// define key as a string value then call it with square bracket
 let address = {
     'building no' : 5555,
     street : 'Keowee',
@@ -21,8 +24,10 @@ let address = {
 console.log(address);
 console.log(address['building no']);
 
-console.log('street' in address); // check if a  property exists
+// check if a  property exists
+console.log('street' in address); 
 
+// print out key value
 let course = {
     courseName : 'JS',
     url : 'www.cydeo.com',
@@ -33,6 +38,7 @@ for (const key in course) {
     console.log(key+' : '+course[key]);
 }
 
+// object can include object, fuction, arrays
 let myCar = {
     make : 'Dodge',
     year : 2023,

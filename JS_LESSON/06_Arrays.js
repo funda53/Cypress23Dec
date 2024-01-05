@@ -28,10 +28,12 @@ for (let index = 0; index < colors.length; index++) {
     console.log(element);
 }
 
+// of loop
 for (const value of colors) {
     console.log(value);
 }
 
+// each loop
 colors.forEach(element => {
     console.log(element);
 })
